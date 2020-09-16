@@ -66,6 +66,7 @@ export class Dwitter {
       `${this.baseUrl}/tweets/search/recent`,
       options || {},
     );
+     console.log(reqUrl);
 
     const res = await fetch(reqUrl, {
       headers: this.fetchHeaders,
